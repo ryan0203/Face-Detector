@@ -7,7 +7,7 @@
     1)Open cmd<br>
     2)pip3 install opencv-python<br>
     3)check after installation that opencv is installed or not by typing --> <br>
-      C:\>python<br>
+      C:\\>python<br>
       python>>import cv2<br>
       python>>cv2.__version__<br>
       python>>"4.0.0"<br>
