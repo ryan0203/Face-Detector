@@ -4,6 +4,9 @@ from time import sleep
 import numpy as np
 
 cascPath = "haarcascade_frontalface_default.xml"
+cascPath1 = "haarcascade_eye.xml"
+
+eyeCascade = cv2.CascadeClassifier(cascPath1)
 faceCascade = cv2.CascadeClassifier(cascPath)
 
 video_capture = cv2.VideoCapture(0)
@@ -22,7 +25,15 @@ while True:
         minSize=(30, 30)
     )
 
+    eyes = eyeCascade.detectMultiScale(
+        gray,
+        scaleFactor=1.1,
+        minNeighbors=5,
+        minSize=(30, 30)
+    )
     for (x, y, w, h) in faces:
+        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+    for (x, y, w, h) in eyes:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
     if anterior != len(faces):
