@@ -1,10 +1,11 @@
 # Face&Eye-Detector using Haar Cascade
   1)First install Python using the setup.exe
+  
   2)Add python to environment varibles and then follow the instructions.
 
   To install opencv Follow these Steps:-
   1)Open cmd
-  2)pip3 install opencv-python
+  2)pip3 install opencv-python.
   3)check after installation that opencv is installed or not by typing --> 
     C:\>python
     python>>import cv2
