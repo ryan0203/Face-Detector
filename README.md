@@ -1,4 +1,4 @@
-# Face-Detector
+# Face&Eye-Detector using Haar Cascade
   To run the program Follow the following Steps:-
   1) Open cmd.exe
   note:-Make sure you have python3 installed in your machine.
