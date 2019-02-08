@@ -28,9 +28,9 @@ while True:
     if anterior != len(faces):
         anterior = len(faces)
 
-        font                   = cv2.FONT_HERSHEY_SIMPLEX
+        font                   = cv2.FONT_HERSHEY_COMPLEX
         bottomLeftCornerOfText = (10,500)
-        fontScale              = 1
+        fontScale              = 2
         fontColor              = (255,255,255)
         lineType               = 2
 
